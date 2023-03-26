@@ -20,9 +20,9 @@ public:
                         lets.pop_back(); // delete last element
                         break;
                     }
-                    else {
+                    else { // if the last element is the only one
                         res = res + i / 2;
-                        lets.pop_back();
+                        lets.pop_back(); // delete it
                         break;
                     }
                 }
@@ -34,7 +34,7 @@ public:
 
 int main() {
 
-    cout << Solution::minMovesToMakePalindrome("letelt") << endl;
+    cout << Solution::minMovesToMakePalindrome("letelt") << endl; // call a static methods without class object creation
 
     return 0;
 }
